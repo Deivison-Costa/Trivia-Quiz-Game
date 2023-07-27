@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand">Trivia Quiz Game</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <label class="form-label" for="numOfQuestions">Number of Questions:</label>
+      <div class="form-control-container">
+        <input type="number" id="numOfQuestions" [(ngModel)]="numOfQuestions" class="form-control">
+      </div>
+
+      <label class="form-label" for="category">Category:</label>
+      <div class="form-control-container">
+        <select id="category" [(ngModel)]="selectedCategory" class="form-control">
+          <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+        </select>
+      </div>
+
+      <label class="form-label" for="difficulty">Difficulty:</label>
+      <div class="form-control-container">
+        <select id="difficulty" [(ngModel)]="selectedDifficulty" class="form-control">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+
+      <label class="form-label" for="type">Type of Question:</label>
+      <div class="form-control-container">
+        <select id="type" [(ngModel)]="selectedType" class="form-control">
+          <option value="multiple">Multiple Choice</option>
+          <option value="boolean">True/False</option>
+        </select>
+      </div>
+
+      <!-- Add a button to trigger the loading of questions -->
+      <button class="btn btn-primary mt-3" (click)="loadTriviaQuestions()">Load Questions</button>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <div *ngIf="currentQuestion" class="question">
+        <h1>{{ currentQuestion.category }}</h1>
+        <p>{{ decodeHTML(currentQuestion.question) }}</p>
+
+        <!-- Options displayed in a justified layout -->
+        <div class="options-container">
+          <div
+            *ngFor="let option of currentQuestion.options"
+            class="option"
+            (click)="checkAnswer(option)"
+          >
+            {{ decodeHTML(option) }}
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="!currentQuestion" style="font-weight: bold;">
+        <p>Waiting for loading...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <div *ngIf="!currentQuestion" class="score-section">
+        <h2>Your Score: {{ score }} / {{ numOfQuestions }}</h2>
+        <button class="btn btn-primary" (click)="finishQuiz()">Finish</button>
+      </div>
+    </div>
+  </div>
+</div>
