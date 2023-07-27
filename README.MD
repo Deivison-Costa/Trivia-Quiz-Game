@@ -32,10 +32,8 @@
 - **Elegant user interface**: The application is styled using Bootstrap to provide an organized and visually appealing layout.
 
 # Technology Stack
-## The Trivia Quiz Game is built using the following technologies:
-
-- Angular: A modern and popular web framework for building single-page applications;
-- TypeScript: A superset of JavaScript that provides static typing and advanced features;
-- Bootstrap: A front-end framework for building responsive and visually appealing web applications;
-- RxJS: A library for reactive programming and handling asynchronous operations;
-- Open Trivia DB: The game fetches trivia questions through the Open Trivia DB API to provide a wide range of questions and categories.
+- Angular;
+- TypeScript;
+- Bootstrap;
+- RxJS;
+- Open Trivia DB API.
