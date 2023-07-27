@@ -15,7 +15,8 @@
 - **Bootstrap**: A front-end framework for building responsive and visually appealing web applications.
 - **RxJS**: A library for reactive programming and handling asynchronous operations.
 # Usage
-- Start the development server: *ng serve*
+## Start the development server: 
+    ng serve
 
 - Open your web browser and visit http://localhost:4200/ to access the Trivia Quiz Game.
 
