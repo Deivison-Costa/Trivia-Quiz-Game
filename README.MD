@@ -13,10 +13,8 @@
     npm install
 ## Install the required dependencies:
 - **Angular**: A modern and popular web framework for building single-page applications.
-- **TypeScript**: A superset of JavaScript that provides static typing and advanced features.
 - **Bootstrap**: A front-end framework for building responsive and visually appealing web applications.
 - **RxJS**: A library for reactive programming and handling asynchronous operations.
-- **Open Trivia DB**: The game fetches trivia questions through the Open Trivia DB API to provide a wide range of questions and categories.
 # Usage
 - Start the development server: *ng serve*
 
