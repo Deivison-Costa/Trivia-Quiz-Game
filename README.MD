@@ -8,7 +8,7 @@
     git clone https://github.com/Deivison-Costa/Trivia-Quiz-Game
 ## Navigate to the project directory:
     cd trivia-quiz-game
-## Install the required dependencies using npm:
+## Install the required dependencies using npm or yarn:
     npm install
 ## Install the required dependencies:
 - **Angular**: A modern and popular web framework for building single-page applications.
