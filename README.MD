@@ -4,7 +4,6 @@
 - After answering all questions user can see their final score.
 
 # Installation and Setup
-- To run the Trivia Quiz Game locally on your machine, follow the steps below:
 ## Clone the repository to your local machine using Git:
     git clone https://github.com/Deivison-Costa/Trivia-Quiz-Game
 ## Navigate to the project directory:
