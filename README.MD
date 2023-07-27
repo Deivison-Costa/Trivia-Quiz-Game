@@ -5,8 +5,6 @@
 - To run the Trivia Quiz Game locally on your machine, follow the steps below:
 ## Clone the repository to your local machine using Git:
     git clone https://github.com/Deivison-Costa/Trivia-Quiz-Game
-## Install the project and its dependencies in the current directory:
-    npm install trivia-quiz-game-0.0.0.tgz
 ## Navigate to the project directory:
     cd trivia-quiz-game
 ## Install the required dependencies using npm:
