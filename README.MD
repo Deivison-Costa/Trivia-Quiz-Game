@@ -1,5 +1,7 @@
 # Trivia Game Description
-- Trivia Quiz Game is an interactive web app made in Angular that challenges users with a series of trivia questions. Players can select the number of questions, category, difficulty and the type of question they want to answer. The game fetches trivia questions through the Open Trivia DB API and presents them to the user one by one. Players must select the correct answer from multiple choice or True/False options, depending on the question type. After answering all questions user can see their final score.
+- Trivia Quiz Game is an interactive web app made in Angular that challenges users with a series of trivia questions. Players can select the number of questions, category, difficulty and the type of question they want to answer. 
+- The game fetches trivia questions through the Open Trivia DB API and presents them to the user one by one. Players must select the correct answer from multiple choice or True/False options, depending on the question type. 
+- After answering all questions user can see their final score.
 
 # Installation and Setup
 - To run the Trivia Quiz Game locally on your machine, follow the steps below:
