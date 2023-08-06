@@ -3,6 +3,10 @@
 - The game fetches trivia questions through the Open Trivia DB API and presents them to the user one by one. Players must select the correct answer from multiple choice or True/False options, depending on the question type. 
 - After answering all questions user can see their final score.
 
+![Figure_1](https://github.com/Deivison-Costa/Tasks-Manager/assets/112001225/83d2d5f5-6202-4a08-b471-619ee453dccc)
+![Figure_2](https://github.com/Deivison-Costa/Tasks-Manager/assets/112001225/6e66bbfa-8609-4cac-9994-601729e122f3)
+![Figure_3](https://github.com/Deivison-Costa/Tasks-Manager/assets/112001225/fa8733e1-1dd3-48a8-92b9-92c65f2516cf)
+
 # Installation and Setup
 ## Clone the repository to your local machine using Git:
     git clone https://github.com/Deivison-Costa/Trivia-Quiz-Game
